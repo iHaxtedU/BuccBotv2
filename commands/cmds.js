@@ -5,7 +5,9 @@ let commands = new Discord.RichEmbed()
 .setColor("#00FF00")
 .setAuthor("BuccBotv2", bot.user.avatarURL)
 .addField("!ping", "Show's You The Reponse Time For The Bot.")
-.addField("!contact", "Contact A User.");
+.addField("!contact", "Contact A User.")
+.addField("!credits", "View Credits For The Bot")
+.addField("!updates", "Added Updates Command For Bot");
 
 message.channel.send(commands);
  }
