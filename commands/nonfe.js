@@ -11,7 +11,7 @@ var answers = [
 
 var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
 
-console.log(randomAnswer);
+message.author.send(randomAnswer);
 }
 module.exports.help = {
   name: "nonfe"
