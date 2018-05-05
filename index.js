@@ -25,6 +25,13 @@ fs.readdir("./commands/", (err, files) => {
 
 bot.on("ready", async () => {
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
+  
+  let start = new Discord.RichEmbed()
+  .setAuthor(bot.user.username, bot.user.avatarURL)
+  .addDescription("Bot Successfully Restarted");
+  
+  let send1 = bot.channels.find('name', "general");
+  send1.send(start);
 
   bot.user.setActivity("Everyone!", {type: "WATCHING"});
 
