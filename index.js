@@ -28,7 +28,7 @@ bot.on("ready", async () => {
   
   let start = new Discord.RichEmbed()
   .setAuthor("BuccBotv2", bot.user.avatarURL)
-  .addDescription("Bot Successfully Restarted");
+  .setDescription("Bot Successfully Restarted");
   
   let send1 = bot.channels.find('name', "general");
   send1.send(start);
