@@ -1,10 +1,17 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-  let choices = ["Im Hoping", "That This", "Is Working"];
-  let tosend = Math.floor(Math.random() * choices.length);
-  
-  message.author.send(tosend);
+var answers = [
+  "Hey",
+  "Howdy",
+  "Hello There",
+  "Wotcha",
+  "Alright gov'nor"
+]
+
+var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
+
+console.log(randomAnswer);
 }
 module.exports.help = {
   name: "nonfe"
