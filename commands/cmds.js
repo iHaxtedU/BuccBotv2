@@ -8,5 +8,5 @@ message.channel.send(commands);
  }
 
 module.exports.help = {
-  name: "ping"
+  name: "cmds"
 }
