@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
   let choices = ["Im Hoping", "That This", "Is Working"];
   let random = Math.floor(Math.random()*choices.content);
   
-  message.author.send(random)
+  message.author.send(random);
 }
 module.exports.help = {
   name: "nonfe"
