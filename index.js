@@ -48,7 +48,7 @@ bot.on("message", async message => {
   let args = messageArray.slice(1);
   
   if(message.content.startsWith("!")) {
-  if(!message.member.roles.find("name", "gay role")) return message.channel.send("Don't Even Think About It");
+  if(!message.member.roles.find("name", "Bot Permissions")) return message.channel.send("Don't Even Think About It");
   };
 
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
