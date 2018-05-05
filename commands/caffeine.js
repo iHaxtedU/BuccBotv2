@@ -5,5 +5,5 @@ message.channel.send("Call 531-721-9216")
  }
 
 module.exports.help = {
-  name: "cmds"
+  name: "caffeine"
 }
