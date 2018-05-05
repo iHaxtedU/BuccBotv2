@@ -7,5 +7,5 @@ module.exports.run = async (bot, message, args) => {
   message.author.send(random)
 }
 module.exports.help = {
-  name: "contact"
+  name: "nonfe"
 }
