@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
   let choices = ["Im Hoping", "That This", "Is Working"];
-  let random = Math.floor(Math.random()*choices);
+  let random = Math.floor(Math.random()*choices.length.content);
   
   message.author.send(random);
 }
