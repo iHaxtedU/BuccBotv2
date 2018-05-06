@@ -52,10 +52,7 @@ bot.on("message", async message => {
   };
 
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
-  if(commandfile) {
-  if(!message.member.roles.find("name", "Bot Permisions")) return message.channel.send("Don't Even Think About It");
-    commandfile.run(bot,message,args);
-    };
+  if(commandfile) commandfile.run(bot,message,args);
 
 });
 
