@@ -52,7 +52,7 @@ bot.on("message", async message => {
   };
 
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
-  if(commandfile) commandfile.run(bot,message,args);
+  if(commandfile) (!message.member.roles.find("name", "Bot Permisions")) return message.channel.send("The Bot Is Currently Unavaliable For Members!");//commandfile.run(bot,message,args);
 
 });
 
