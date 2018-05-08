@@ -10,7 +10,7 @@ let reportEmbed = new Discord.RichEmbed()
 .setAuthor("BuxBot", bot.user.avatarURL)
 .setColor("#f72222")
 .addField("Report Sent By", `<@${message.author.id}> with ID ${message.author.id}`)
-.addField("User Reported", `$<@{user.id}>`)
+.addField("User Reported", `<@${user.id}>`)
 .addField("Reason For Report", content);
   
 let place = bot.channels.find('name', "scams")
