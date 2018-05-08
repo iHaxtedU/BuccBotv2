@@ -7,7 +7,9 @@ let content = args.slice(1).join(" ");
 if (!content) return message.channel.send("You Need A Reason :face_palm:");
                                           
 let reportEmbed = new Discord.RichEmbed()
-.setAuthor(
+.setAuthor("BuccBotv2", bot.user.avatarURL)
+.setColor("#f72222")
+.addField("Report Sent By", 
  }
 
 module.exports.help = {
