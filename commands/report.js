@@ -5,7 +5,7 @@ let user = message.mentions.members.first();
 if (!user) return message.channel.send("Please Report A User");
 let content = args.slice(1).join(" ");
 if (!content) return message.channel.send("You Need A Reason :face_palm:");
-if(content.length < 30) return message.channel.send("The Reason Must Be Atleast 30 Characters Long.).then(msg => {msg.delete(5000)})
+if(content.length < 30) return message.channel.send("The Reason Must Be Atleast 30 Characters Long.").then(msg => {msg.delete(5000)})
                                           
 let reportEmbed = new Discord.RichEmbed()
 .setAuthor("BuxBot", bot.user.avatarURL)
