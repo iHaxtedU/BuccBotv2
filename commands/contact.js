@@ -1,11 +1,11 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("You Neeed Admin Permission's To Use This Command");
   let iUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
   if(!iUser) return message.channel.send("Can't Find User!");
   let iReason = args.join(" ").slice(22);
   let msg = ("You Were Called To Encry For...");
-  if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("You Neeed Admin Permission's To Use This Command");
 
   let contactEmbed = new Discord.RichEmbed()
   .setDescription("~You Have Been Contacted~")
