@@ -11,7 +11,7 @@ let reportEmbed = new Discord.RichEmbed()
 .setColor("#f72222")
 .addField("Report Sent By", `<@${message.author.id}> with ID ${message.author.id}`)
 .addField("User Reported" `$<@{user}>`)
-.addField("Reason For Report" content);
+.addField("Reason For Report", content);
   
 let place = bot.channels.find('name', "scams")
 place.send(reportEmbed)
