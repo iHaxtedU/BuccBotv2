@@ -46,13 +46,12 @@ bot.on("message", async message => {
   let messageArray = message.content.split(" ");
   let cmd = messageArray[0];
   let args = messageArray.slice(1);
-  
-  if(message.content.startsWith("!")) {
-  if(!message.member.roles.find("name", "Bot Permisions")) return message.channel.send("Don't Even Think About It");
-  };
 
   let commandfile = bot.commands.get(cmd.slice(prefix.length));
-  if(commandfile) commandfile.run(bot,message,args);
+  if(commandfile)  {
+  if(!message.member.roles.find("name", "Bot Permisions")) return message.channel.send("Don't Even Think About It");
+  commandfile.run(bot,message,args);
+  };
 
 });
 
