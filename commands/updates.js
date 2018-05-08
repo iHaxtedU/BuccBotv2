@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 let updates = new Discord.RichEmbed()
 .setAuthor("BuccBotv2", bot.user.avatarURL)
 .setColor("#2ef22b")
-.addField("V1 (Official Release)", "Added !updates Command =-= Added !credits Command =-= Added Onto !cmds Command")
+.addField("V2 (Stable Release)", "Allowing Users To Now Use The Commands, Have Fun!!!)
 
 message.channel.send(updates);
  }
